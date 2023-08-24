@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", cursive, serif;
+}
+
+.row{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+h1 {
+    margin-bottom: 15px;
+    text-align: center;
+    color: #023ED4;
+    font-size: 50px;
+}
+
+
+.box{
+    width: 100%;
+}
+
+
+.content-name{
+    text-align: center;
+    border: 1px solid black;
+    width: 75px;
+    height: 35px;
+    padding: 5px;
+    float: right;
+    margin-right: 51px;
+    margin-top: 10px;
+    font-weight: bold;
+    position: relative;
+}
+
+.content{
+    border: 1px solid black;
+    width: 90%;
+    height: auto;
+    margin: 2.5%;
+    color: black;
+    font-size: 25px;
+    padding: 55px 2% 2%;
+    background-color: rgba(135,206,235,0.5);
+}
+
+.name1{
+    color: firebrick;
+    background-color: #C3B1E1;
+}
+
+.name2{
+    color: white;
+    background-color: #FF0000;
+}
+.name3{
+    color: salmon;
+    background-color: #E6DBAC;
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+    .col-lg-4 {
+        float: left;
+        width: 33.33%;
+    }
+}
+/*************** Medium devices only ****************/
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6,.col-md-12 {
+        float: left;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-12 {
+        margin-left: -10px;
+        width: 100%;
+    }
+    .name3{
+        margin-right: 65px;
+        width: 100px;
+    }
+}
+/*************** Small devices only ****************/
+@media (min-width: 0px) and (max-width: 767px) {
+    .col-sm-12 {
+        float: left;
+        width: 100%;
+    }
+    .content-name{
+        margin-right: 30px;
+    }
+}
